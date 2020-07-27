@@ -18,18 +18,20 @@ public class VowelCounter {
 
 		Scanner scan = new Scanner(System.in);
 		String string, aString;
-		int max, aCharA;
-		char a = 'a', e = 'e', i = 'i', o = 'o', u = 'u';
+		int max;
+		char a = 'a', e = 'e'; //i = 'i', o = 'o', u = 'u';
 		System.out.println("Type something with vowels in it: ");
 		string = scan.nextLine();
 		System.out.println("This is what you typed: " + string);
 		max = string.length();
 
-		for (int aChar = 0; aChar < max; aChar++)
-			aCharA = string.indexOf(aChar);
-			System.out.println(aCharA);
+		
+			for (int aCharA = 0 ; aCharA < max ; aCharA++)
+				//what method do I get at a particular letter in the string
+				System.out.println(string.charAt(aCharA));
+		
 			// System.out.println(string.lastIndexOf('a'));
 
 		}
 }
-}
+
