@@ -12,8 +12,7 @@ public class AgeGuessCond {
 
 	public static void main(String[] args) {
 
-		// Name
-		// Guess---------------------------------------------------------------------
+		// Name Guess-------------------------------------------------------------
 
 		Scanner scan = new Scanner(System.in);
 
@@ -23,8 +22,7 @@ public class AgeGuessCond {
 
 		System.out.println("You guessed that my name is: " + name + ". It's actually 3279.64i0.");
 
-		// Age
-		// Guess---------------------------------------------------------------------
+		// Age Guess---------------------------------------------------------------
 
 		int AgeGuess, age;
 		Random Age = new Random();
