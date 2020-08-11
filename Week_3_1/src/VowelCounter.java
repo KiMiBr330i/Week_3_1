@@ -14,13 +14,13 @@ public class VowelCounter {
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
-		String string;
 		char a = 'a', e = 'e', i = 'i', o = 'o', u = 'u';
-
 		int max, acount = 0, ecount = 0, ocount = 0, icount = 0, ucount = 0, nvCount = 0;
-		System.out.print("Type a phrase and this program will tell you ");
-		System.out.println("how many of each type of vowel and number of non-vowel characters are in it: ");
-		string = scan.nextLine();
+		
+		System.out.print("This program tells you ");
+		System.out.println("how many of each type of vowel and the number of non-vowel characters that are in a phrase you will input.");
+		System.out.println("Please enter your phrase: ");
+		String string = scan.nextLine();
 		max = string.length();
 
 		for (int index = 0; index < max; index++) { // loop for scanning through the user-supplied string
@@ -44,9 +44,9 @@ public class VowelCounter {
 			} else if (u == string.charAt((index))) {
 				ucount++;
 
-				// ----------------------------------------------------------------------------------------------------------
-				// conditional statements identifying, counting non-vowel characters
-				// ----------------------------------------------------------------------------------------------------------
+			// ----------------------------------------------------------------------------------------------------------
+			// conditional statements identifying, counting non-vowel characters
+			// ----------------------------------------------------------------------------------------------------------
 
 			} else if (a != string.charAt((index))) {
 				nvCount++;
@@ -66,7 +66,7 @@ public class VowelCounter {
 			}
 
 		}
-
+		System.out.println("Your phrase was: " + string);
 		System.out.println("There are " + acount + " lower case a letters.");
 		System.out.println("There are " + ecount + " lower case e letters.");
 		System.out.println("There are " + icount + " lower case i letters.");
